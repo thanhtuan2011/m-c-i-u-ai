@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mocdieu.vn/sitemap.xml

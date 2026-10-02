@@ -1,0 +1,6 @@
+{
+  "name": "Mộc Điều - Hạt Điều Tự Nhiên & Cao Cấp",
+  "description": "Website chính thức của thương hiệu Mộc Điều - Mộc vị tự nhiên, trọn vị hạt điều. Cung cấp sản phẩm hạt điều cao cấp, mộc mạc và chuẩn vị truyền thống.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-brand-brown: #8A5A3B;
+    --color-brand-brown-dark: #6E442B;
+    --color-brand-brown-light: #A57351;
+    --color-brand-blue: #2F5D7E;
+    --color-brand-blue-dark: #22455E;
+    --color-brand-cream: #F7F3EA;
+    --color-brand-cream-card: #F1ECE0;
+    --color-brand-cream-dark: #E4DCCB;
+    --color-brand-dark: #252525;
+    --color-brand-muted: #6B645C;
+  }
+
+  *, *::before, *::after {
+    font-family: 'Be Vietnam Pro', sans-serif !important;
+  }
+
+  html, body {
+    font-family: 'Be Vietnam Pro', sans-serif !important;
+    color: #252525;
+    background-color: #F7F3EA;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "kern" 1, "liga" 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: 'Be Vietnam Pro', sans-serif !important;
+    letter-spacing: -0.015em;
+    font-feature-settings: "kern" 1, "liga" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  p, span, a, button, input, textarea, select, label, article {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1ECE0;
+}
+::-webkit-scrollbar-thumb {
+  background: #8A5A3B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6E442B;
+}
+
+/* Subtle transitions */
+.transition-luxury {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
