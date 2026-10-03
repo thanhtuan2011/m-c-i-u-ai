@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-white/90 p-1 border border-white/20 flex items-center justify-center shrink-0 overflow-hidden">
                 <img 
-                  src="/src/assets/images/regenerated_image_1790905757458.png" 
+                  src="/images/regenerated_image_1790905757458.png" 
                   alt="Logo Mộc Điều" 
                   className="w-full h-full object-contain"
                 />

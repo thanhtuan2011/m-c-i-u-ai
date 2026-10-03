@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .navy-stroke { stroke: #122B4C; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .brown-stroke { stroke: #9E7247; stroke-width: 9; stroke-linecap: round; fill: none; }
+      .brand-text { font-family: 'Be Vietnam Pro', system-ui, sans-serif; font-weight: 900; font-size: 58px; fill: #122B4C; letter-spacing: 4px; }
+    </style>
+  </defs>
+
+  <!-- Background subtle warm paper texture tone (transparent for versatile display) -->
+  <rect width="100%" height="100%" fill="transparent" />
+
+  <!-- Cashew sprout vine (top left curl) -->
+  <path class="navy-stroke" d="M 285 162 C 275 148, 255 125, 270 135 C 285 145, 290 130, 280 120 C 270 110, 255 125, 265 145 C 272 158, 280 168, 286 172" />
+
+  <!-- Sprout leaf (top right) -->
+  <path class="navy-stroke" fill="#122B4C" d="M 292 165 C 315 150, 345 130, 360 142 C 362 160, 335 178, 304 175 Z" />
+
+  <!-- Main Cashew Nut Outer Shell Outline -->
+  <path class="navy-stroke" d="M 290 178 C 315 195, 332 230, 328 265 C 322 305, 288 335, 240 335 C 190 335, 155 305, 155 260 C 155 225, 195 210, 230 230 C 265 250, 285 220, 290 178 Z" />
+
+  <!-- Inner Cashew Contour Accent (Brown) -->
+  <path class="brown-stroke" d="M 172 265 C 180 295, 215 318, 265 315 C 288 312, 305 292, 312 265" />
+
+  <!-- Official Brand Name: MỘC ĐIỀU -->
+  <text x="250" y="425" text-anchor="middle" class="brand-text">MỘC ĐIỀU</text>
+</svg>

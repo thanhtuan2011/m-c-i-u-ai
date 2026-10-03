@@ -27,11 +27,11 @@ export const initialProducts: Product[] = [
     price: 155000,
     salePrice: 145000,
     weight: '500g',
-    image: '/src/assets/images/regenerated_image_1790907946473.png',
+    image: '/images/regenerated_image_1790907946473.png',
     gallery: [
-      '/src/assets/images/regenerated_image_1790907946473.png',
-      '/src/assets/images/regenerated_image_1790908327611.png',
-      '/src/assets/images/regenerated_image_1790908455367.png',
+      '/images/regenerated_image_1790907946473.png',
+      '/images/regenerated_image_1790908327611.png',
+      '/images/regenerated_image_1790908455367.png',
     ],
     ingredients: 'Hạt điều vỏ lụa chọn lọc (99%), muối biển tinh khiết (1%)',
     usage: 'Tách nhẹ lớp vỏ lụa trước khi dùng. Dùng ăn trực tiếp, làm món ăn nhẹ bổ dưỡng hoặc thưởng thức cùng trà mộc.',
@@ -51,11 +51,11 @@ export const initialProducts: Product[] = [
     shortDescription: 'Hạt điều bóc vỏ lụa sấy mộc nguyên vị ngọt bùi tự nhiên, không tẩm ướp muối hay phụ gia.',
     price: 165000,
     weight: '500g',
-    image: '/src/assets/images/regenerated_image_1790908327611.png',
+    image: '/images/regenerated_image_1790908327611.png',
     gallery: [
-      '/src/assets/images/regenerated_image_1790908327611.png',
-      '/src/assets/images/regenerated_image_1790907946473.png',
-      '/src/assets/images/regenerated_image_1790908455367.png',
+      '/images/regenerated_image_1790908327611.png',
+      '/images/regenerated_image_1790907946473.png',
+      '/images/regenerated_image_1790908455367.png',
     ],
     ingredients: 'Hạt điều nguyên chất 100% (không muối, không đường, không chất bảo quản)',
     usage: 'Ăn trực tiếp, làm sữa hạt điều dinh dưỡng, rắc lên salad, granola hoặc kết hợp cùng sữa chua ngũ cốc.',
@@ -76,11 +76,11 @@ export const initialProducts: Product[] = [
     price: 385000,
     salePrice: 360000,
     weight: 'Hộp 2 hũ x 400g',
-    image: '/src/assets/images/regenerated_image_1790908455367.png',
+    image: '/images/regenerated_image_1790908455367.png',
     gallery: [
-      '/src/assets/images/regenerated_image_1790908455367.png',
-      '/src/assets/images/regenerated_image_1790907946473.png',
-      '/src/assets/images/regenerated_image_1790908327611.png',
+      '/images/regenerated_image_1790908455367.png',
+      '/images/regenerated_image_1790907946473.png',
+      '/images/regenerated_image_1790908327611.png',
     ],
     ingredients: 'Hạt điều vỏ lụa rang muối (400g) + Hạt điều rang mộc tự nhiên (400g)',
     usage: 'Món quà trang trọng cho các dịp lễ tết, mừng tân gia, sinh nhật hoặc tri ấn đối tác kinh doanh.',
@@ -100,10 +100,10 @@ export const initialProducts: Product[] = [
     shortDescription: 'Túi zip nhỏ gọn mộc mạc, tiện lợi thưởng thức mỗi ngày tại văn phòng hay khi di chuyển.',
     price: 85000,
     weight: '250g',
-    image: '/src/assets/images/regenerated_image_1790908624500.png',
+    image: '/images/regenerated_image_1790908624500.png',
     gallery: [
-      '/src/assets/images/regenerated_image_1790908624500.png',
-      '/src/assets/images/regenerated_image_1790907946473.png',
+      '/images/regenerated_image_1790908624500.png',
+      '/images/regenerated_image_1790907946473.png',
     ],
     ingredients: 'Hạt điều vỏ lụa chọn lọc (99%), muối biển tự nhiên (1%)',
     usage: 'Dùng trực tiếp, vuốt kín khóa zip sau khi dùng.',
@@ -147,7 +147,7 @@ Nếu chẳng may hạt bị giảm độ giòn do mở nắp lâu, bạn hoàn 
 
 Chúc bạn luôn có những khoảnh khắc nhâm nhi hạt điều thật tròn vị!
     `,
-    coverImage: '/src/assets/images/regenerated_image_1790909542475.png',
+    coverImage: '/images/regenerated_image_1790909542475.png',
     author: 'Mộc Điều',
     category: 'Mẹo bảo quản',
     readTime: '4 phút đọc',
@@ -179,7 +179,7 @@ Hạt điều chuẩn mới rang sẽ tỏa hương thơm bùi đặc trưng, d�
 ### 4. Vị bùi béo tự nhiên và độ giòn
 Khi cắn vào, hạt tạo cảm giác giòn rụm dứt khoát nhưng không bị cứng xơ xác. Tiếp đến là vị ngọt hậu kéo dài sâu trong vòm họng cùng chất béo ngậy mượt mà. Với hạt điều rang muối chuẩn, vị mặn chỉ thoang thoảng ở đầu lưỡi, tôn lên vị bùi chứ không lấn át vị ngọt nguyên bản của hạt.
     `,
-    coverImage: '/src/assets/images/regenerated_image_1790907946473.png',
+    coverImage: '/images/regenerated_image_1790907946473.png',
     author: 'Mộc Điều',
     category: 'Kiến thức hạt',
     readTime: '5 phút đọc',
@@ -210,7 +210,7 @@ Tại Mộc Điều, hai dòng sản phẩm được quan tâm nhiều nhất l�
 
 Cả hai dòng sản phẩm đều là lựa chọn tuyệt vời từ thiên nhiên. Tùy theo nhu cầu và sở thích, bạn có thể chọn dòng sản phẩm phù hợp nhất cho mình và người thân.
     `,
-    coverImage: '/src/assets/images/cashew_giftbox_1790901540798.jpg',
+    coverImage: '/images/cashew_giftbox_1790901540798.jpg',
     author: 'Mộc Điều',
     category: 'Cẩm nang dinh dưỡng',
     readTime: '4 phút đọc',

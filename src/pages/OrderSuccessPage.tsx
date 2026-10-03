@@ -144,7 +144,7 @@ export const OrderSuccessPage: React.FC = () => {
             <div className="text-center bg-white p-4 rounded-xl text-[#252525] max-w-[260px] mx-auto shadow-md">
               <div className="w-full mx-auto bg-white rounded-lg flex items-center justify-center overflow-hidden border border-gray-100 p-1">
                 <img
-                  src="/src/assets/images/regenerated_image_1790910542641.png"
+                  src="/images/regenerated_image_1790910542641.png"
                   alt="Mã VietQR Techcombank - Đỗ Lê Thành Tuấn - 19070016129010"
                   className="w-full h-auto max-h-80 object-contain rounded"
                 />

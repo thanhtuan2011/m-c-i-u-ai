@@ -91,7 +91,7 @@ export const AdminDashboard: React.FC = () => {
     weight: '500g',
     category: 'roasted_salt' as Product['category'],
     stock: 50,
-    image: '/src/assets/images/regenerated_image_1790907946473.png',
+    image: '/images/regenerated_image_1790907946473.png',
     featured: true,
     ingredients: 'Hạt điều chọn lọc (99%), muối biển tinh khiết (1%)',
     usage: 'Dùng ăn trực tiếp, làm món tráng miệng hoặc ăn nhẹ.',
@@ -109,7 +109,7 @@ export const AdminDashboard: React.FC = () => {
     readTime: '4 phút đọc',
     excerpt: '',
     content: '',
-    coverImage: '/src/assets/images/cashew_pure_hero_1790904772656.jpg',
+    coverImage: '/images/cashew_pure_hero_1790904772656.jpg',
     published: true,
   });
 
@@ -270,7 +270,7 @@ export const AdminDashboard: React.FC = () => {
         category: productForm.category,
         stock: Number(productForm.stock),
         image: productForm.image,
-        gallery: [productForm.image, '/src/assets/images/cashew_pure_hero_1790904772656.jpg'],
+        gallery: [productForm.image, '/images/cashew_pure_hero_1790904772656.jpg'],
         featured: productForm.featured,
         ingredients: productForm.ingredients,
         usage: productForm.usage,
@@ -666,7 +666,7 @@ export const AdminDashboard: React.FC = () => {
                     weight: '500g',
                     category: 'roasted_salt',
                     stock: 50,
-                    image: '/src/assets/images/regenerated_image_1790907946473.png',
+                    image: '/images/regenerated_image_1790907946473.png',
                     featured: true,
                     ingredients: 'Hạt điều chọn lọc (99%), muối biển tự nhiên (1%)',
                     usage: 'Ăn trực tiếp, thưởng thức cùng trà mộc.',
@@ -700,7 +700,11 @@ export const AdminDashboard: React.FC = () => {
                   {products.map(p => (
                     <tr key={p.id} className="hover:bg-gray-50 transition-colors">
                       <td className="p-3 flex items-center gap-3">
-                        <img src={p.image} alt={p.name} className="w-10 h-10 object-cover rounded-md bg-[#F7F3EA]" />
+                        <img
+                          src={p.image}
+                          alt={p.name}
+                          className="w-10 h-10 object-cover rounded-md bg-[#F7F3EA]"
+                        />
                         <div>
                           <span className="font-bold text-[#252525] block line-clamp-1">{p.name}</span>
                           <span className="text-[11px] text-[#6B645C]">{p.category}</span>
@@ -873,7 +877,7 @@ export const AdminDashboard: React.FC = () => {
                     readTime: '4 phút đọc',
                     excerpt: '',
                     content: '',
-                    coverImage: '/src/assets/images/cashew_pure_hero_1790904772656.jpg',
+                    coverImage: '/images/cashew_pure_hero_1790904772656.jpg',
                     published: true,
                   });
                   setIsNewPostModalOpen(true);
@@ -889,7 +893,11 @@ export const AdminDashboard: React.FC = () => {
               {posts.map(p => (
                 <div key={p.id} className="p-4 rounded-xl border border-[#8A5A3B]/15 flex items-center justify-between gap-4 hover:bg-gray-50">
                   <div className="flex items-center gap-3">
-                    <img src={p.coverImage} alt={p.title} className="w-14 h-14 object-cover rounded-lg bg-[#F7F3EA]" />
+                    <img
+                      src={p.coverImage}
+                      alt={p.title}
+                      className="w-14 h-14 object-cover rounded-lg bg-[#F7F3EA]"
+                    />
                     <div>
                       <h3 className="font-bold text-xs sm:text-sm text-[#252525] line-clamp-1">{p.title}</h3>
                       <p className="text-[11px] text-[#6B645C]">{p.category} • {formatDate(p.publishedAt)}</p>

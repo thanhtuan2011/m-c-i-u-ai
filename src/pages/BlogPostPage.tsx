@@ -168,7 +168,11 @@ export const BlogPostPage: React.FC = () => {
                 className="bg-white p-5 rounded-xl border border-[#8A5A3B]/15 hover:border-[#8A5A3B]/30 cursor-pointer shadow-xs transition-all space-y-3 group"
               >
                 <div className="aspect-16/9 rounded-lg overflow-hidden bg-[#F7F3EA]">
-                  <img src={p.coverImage} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                  <img
+                    src={p.coverImage}
+                    alt={p.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                  />
                 </div>
                 <h3 className="font-serif text-base font-bold text-[#252525] group-hover:text-[#8A5A3B] line-clamp-2">
                   {p.title}

@@ -144,7 +144,7 @@ export const HomePage: React.FC = () => {
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 <div className="aspect-4/3 sm:aspect-square rounded-2xl overflow-hidden shadow-2xl border-4 border-white/80 bg-[#EFE9DC]">
                   <img
-                    src="/src/assets/images/moc_dieu_official_hero_1790905543934.jpg"
+                    src="/images/moc_dieu_official_hero_1790905543934.jpg"
                     alt="Hạt điều Mộc Điều - Bao bì tự nhiên và hạt điều chọn lọc"
                     className="w-full h-full object-cover object-center transform hover:scale-103 transition-transform duration-700"
                   />
@@ -308,7 +308,7 @@ export const HomePage: React.FC = () => {
             <div className="lg:col-span-5 order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-[#8A5A3B]/20">
                 <img
-                  src="/src/assets/images/regenerated_image_1790908455367.png"
+                  src="/images/regenerated_image_1790908455367.png"
                   alt="Câu chuyện Mộc Điều - Tôn trọng giá trị nguyên bản"
                   className="w-full h-auto object-cover"
                 />

@@ -40,7 +40,7 @@ export const Header: React.FC = () => {
           >
             <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white/90 p-1 border border-[#8A5A3B]/20 shadow-xs flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform overflow-hidden">
               <img 
-                src="/src/assets/images/regenerated_image_1790905757458.png" 
+                src="/images/regenerated_image_1790905757458.png" 
                 alt="Logo biểu trưng Mộc Điều" 
                 className="w-full h-full object-contain"
               />

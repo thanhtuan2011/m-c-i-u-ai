@@ -93,6 +93,11 @@ const STORAGE_KEYS = {
   SETTINGS: 'moc_dieu_settings_v1',
 };
 
+export const normalizeImagePath = (path?: string): string => {
+  if (!path) return '';
+  return path.replace(/^\/src\/assets\/images\//, '/images/');
+};
+
 export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // 1. Initial State from LocalStorage or Defaults
   const [products, setProducts] = useState<Product[]>(() => {
@@ -109,7 +114,11 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
               gallery: defaultMatch.gallery,
             };
           }
-          return p;
+          return {
+            ...p,
+            image: normalizeImagePath(p.image),
+            gallery: p.gallery ? p.gallery.map(normalizeImagePath) : [normalizeImagePath(p.image)],
+          };
         });
       }
       return initialProducts;
@@ -125,7 +134,10 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         const parsed: BlogPost[] = JSON.parse(saved);
         return parsed.map(post => {
           const defaultMatch = initialBlogPosts.find(ip => ip.id === post.id);
-          return defaultMatch ? { ...post, coverImage: defaultMatch.coverImage } : post;
+          if (defaultMatch) {
+            return { ...post, coverImage: defaultMatch.coverImage };
+          }
+          return { ...post, coverImage: normalizeImagePath(post.coverImage) };
         });
       }
       return initialBlogPosts;
@@ -146,7 +158,18 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const [cart, setCart] = useState<CartItem[]>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEYS.CART);
-      return saved ? JSON.parse(saved) : [];
+      if (saved) {
+        const parsed: CartItem[] = JSON.parse(saved);
+        return parsed.map(item => ({
+          ...item,
+          product: {
+            ...item.product,
+            image: normalizeImagePath(item.product.image),
+            gallery: item.product.gallery ? item.product.gallery.map(normalizeImagePath) : [normalizeImagePath(item.product.image)],
+          },
+        }));
+      }
+      return [];
     } catch {
       return [];
     }
@@ -159,6 +182,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         const parsed: Order[] = JSON.parse(saved);
         return parsed.map(o => ({
           ...o,
+          items: o.items ? o.items.map(it => ({ ...it, image: normalizeImagePath(it.image) })) : [],
           status: (o.status === 'Đã thanh toán' || o.status === 'completed') ? 'Đã thanh toán' : 'Chưa thanh toán',
         }));
       }

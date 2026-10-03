@@ -79,7 +79,7 @@ export const AboutPage: React.FC = () => {
           <div className="lg:col-span-6">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-[#EFE9DC]">
               <img
-                src="/src/assets/images/regenerated_image_1790909542475.png"
+                src="/images/regenerated_image_1790909542475.png"
                 alt="Triết lý hạt điều mộc Mộc Điều"
                 className="w-full h-auto object-cover"
               />
